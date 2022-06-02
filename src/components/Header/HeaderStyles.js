@@ -1,4 +1,4 @@
-import { IoIosArrowDropdown } from 'react-icons/io';
+import {IoIosArrowDropdown} from 'react-icons/io';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -6,8 +6,7 @@ export const Container = styled.div`
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
-  padding: 1rem;
-  padding-top: 2rem;
+  padding: 2rem 1rem 0;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
@@ -22,6 +21,11 @@ export const Div1 = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
+
+  span {
+    font-size: 2rem;
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 1 / 1 / 2 / 3;
   }
@@ -51,11 +55,13 @@ export const NavLink = styled.a`
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);
   transition: 0.4s ease;
+
   &:hover {
     color: #fff;
     opacity: 1;
     cursor: pointer;
   }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.5rem;
   }
@@ -77,6 +83,7 @@ export const ContactDropDown = styled.button`
   &:focus {
     outline: none;
   }
+
   &:hover {
     color: #fff;
   }
@@ -94,8 +101,8 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
   display: flex;
   align-self: center;
   transition: 0.3s ease;
-  opacity: ${({ isOpen }) => (isOpen ? '1' : '.75')};
-  transform: ${({ isOpen }) => (isOpen ? 'scaleY(-1)' : 'scaleY(1)')};
+  opacity: ${({isOpen}) => (isOpen ? '1' : '.75')};
+  transform: ${({isOpen}) => (isOpen ? 'scaleY(-1)' : 'scaleY(1)')};
 
   &:hover {
     opacity: 1;
@@ -108,17 +115,18 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 `;
 
 
-// Social Icons 
+// Social Icons
 
 export const SocialIcons = styled.a`
-transition: 0.3s ease;
-color: white;
-border-radius: 50px;
+  transition: 0.3s ease;
+  color: white;
+  border-radius: 50px;
   padding: 8px;
-&:hover {
+
+  &:hover {
     background-color: #212d45;
     transform: scale(1.2);
     cursor: pointer;
-    
+
   }
 `
