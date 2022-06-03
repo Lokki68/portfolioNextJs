@@ -51,10 +51,10 @@ const Timeline = () => {
   }, []);
 
   return (
-    <Section id='about'>
+    <Section id='About'>
       <SectionTitle>About</SectionTitle>
       <SectionText>41 ans, marié et père de trois enfants.
-        Rigoureux, organisé et dynamique, je suis doté d'un bon esprit d'initiative et d'une grande faculté
+        Rigoureux, organisé et dynamique, je suis doté d'un bon esprit d'initiative et d'une grande facultée
         d'adaptation. J'aime travailler en équipe et relever de nouveaux challenges. J'ai souhaité me reconvertir
         professionnellement, afin d'allier ma passion à mon futur métier.</SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
