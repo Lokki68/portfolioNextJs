@@ -65,9 +65,10 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  {year: 2017, text: 'Started my journey',},
-  {year: 2018, text: 'Worked as a freelance developer',},
-  {year: 2019, text: 'Founded JavaScript Mastery',},
-  {year: 2020, text: 'Shared my projects with the world',},
-  {year: 2021, text: 'Started my own platform',},
+  {year: '02/2021', text: 'Formation Développeur Web OpenClassRooms Mentoré',},
+  {year: '08/2021', text: 'Fin Formation Développeur Web',},
+  {year: '09/2021', text: 'Divers Formation sur Udemy',},
+  {year: '10/2021', text: 'Création de Lokki Development',},
+  {year: '02/2022', text: 'Rejoint Modulo-Tech',},
+  {year: '03/2022', text: 'Rejoint le Challenge BeSwarm (100 dev / 20 apps)',},
 ];
